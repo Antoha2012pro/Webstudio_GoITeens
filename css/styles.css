@@ -36,7 +36,7 @@ img {
 .container {
     outline: 1px solid red;
     width: 1200px;
-    padding: 0 15px;
+    padding: 0 15px; 
     margin: 0 auto;   
 }
 
@@ -124,6 +124,11 @@ header {
     box-shadow: 0px 4px 4px 0px;
 }
 
+.we {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .we-title {
     color: var(--color);
     font-size: 14px;
@@ -141,6 +146,11 @@ header {
     letter-spacing: 0.42px;
 }
 
+.make {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .make-title {
     color: var(--color);
     text-align: center;
@@ -154,6 +164,12 @@ header {
     width: 370px;
     height: 294px;
     flex-shrink: 0;
+}
+
+.team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: var(--background-color1);
 }
 
 .team-title {
@@ -193,6 +209,8 @@ header {
 
 .footer {
     background-color: var(--background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer-addres {
