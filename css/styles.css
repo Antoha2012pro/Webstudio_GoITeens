@@ -27,6 +27,7 @@ a {
 
 body {
     font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
 }
 
 img {
@@ -34,17 +35,20 @@ img {
 }
 
 .container {
-    outline: 1px solid red;
     width: 1200px;
     padding: 0 15px; 
-    margin: 0 auto;   
+    margin: 0 auto;  
 }
 
 /* Хедер */
 
-header {
+.header {
     padding-top: 24px;
     padding-bottom: 25px;
+}
+
+header > .container {
+    display: flex;
 }
 
 .logo-header1 {
@@ -65,6 +69,16 @@ header {
     letter-spacing: 0.78px;
 }
 
+.logo {
+    margin-right: 93px;
+}
+
+.header-items {
+    display: flex;
+    gap: 50px;
+    margin-right: 344px;
+}
+
 .header-nav {
     color: var(--color);
     font-size: 14px;
@@ -79,6 +93,11 @@ header {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.28px;
+}
+
+.header-roster {
+    display: flex;   
+    gap: 50px;
 }
 
 .roster-link {
@@ -101,6 +120,10 @@ header {
     padding-bottom: 200px;
 }
 
+.div-decision {
+    width: 696px;
+}
+
 .decision-title {
     color: var(--title-color);
     text-align: center;
@@ -109,6 +132,12 @@ header {
     line-height: 1.36; /* 136.364% */
     letter-spacing: 2.64px;
     text-transform: uppercase;
+    padding-bottom: 30px;
+}
+
+.div-decision-btn {
+    display: flex;
+    justify-content: center;
 }
 
 .decision-btn {
@@ -122,10 +151,19 @@ header {
     border-radius: 4px;
     background: var(--accent-color);
     box-shadow: 0px 4px 4px 0px;
+    
+    display: flex;
+    flex-direction: row;
 }
 
 .we {
     padding-top: 94px;
+    display: flex;
+}
+
+.we-items {
+    display: flex;
+    flex-direction: row;
 }
 
 .we-title {
@@ -157,6 +195,13 @@ header {
     font-weight: 700;
     line-height: 1.17;
     letter-spacing: 1.08px;
+    padding-bottom: 50px;
+}
+
+.make-items {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
 }
 
 .make-img {
@@ -178,6 +223,29 @@ header {
     font-weight: 700;
     line-height: 1.17;
     letter-spacing: 1.08px;
+    padding-bottom: 50px;
+}
+
+.div-team-item1 {
+    background-color: var(--title-color);
+}
+
+.div-team-item2 {
+    background-color: var(--title-color); 
+}
+
+.div-team-item3 {
+    background-color: var(--title-color);
+}
+
+.div-team-item4 {
+    background-color: var(--title-color);
+}
+
+.team-items {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
 }
 
 .team-img {
@@ -193,6 +261,9 @@ header {
     font-weight: 500;
     line-height: 1.19;
     letter-spacing: 0.48px;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
 }
 
 .team-text {
@@ -202,6 +273,10 @@ header {
     font-weight: 400;
     line-height: 1.19;
     letter-spacing: 0.48px;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
 }
 
 /* Футер */
@@ -218,6 +293,10 @@ header {
     font-weight: 400;
     line-height: 1.71; /* 171.429% */
     letter-spacing: 0.42px;
+}
+
+.footer-items {
+    padding-top: 20px;
 }
 
 .footer-link {
