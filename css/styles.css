@@ -73,6 +73,11 @@ header > .container {
     margin-right: 93px;
 }
 
+.header-navigation {
+    display: flex;
+    align-items: center;
+}
+
 .header-items {
     display: flex;
     gap: 50px;
